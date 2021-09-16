@@ -1,0 +1,422 @@
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                FONTS DEBUT
+------------------------------------------------------------------------------------------------------------------------------------------- */
+@font-face{
+    src: url('../font/Gothic.ttf');
+    font-family: 'font1';
+}
+
+@font-face{
+    src: url('../font/Oswald.ttf');
+    font-family: 'font2';
+}
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                FONTS FIN
+------------------------------------------------------------------------------------------------------------------------------------------- */
+body{
+    margin:0;
+    padding:0;
+
+    background: black;
+    font-family:"font1";
+}
+
+a{
+    text-decoration: none;
+}
+
+#fond{
+    position:fixed;
+    z-index:-1;
+    margin-top:3vw;
+
+    width:100%;
+    height:55vw;
+
+    opacity: 0.5;
+}
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                HEADER DEBUT
+------------------------------------------------------------------------------------------------------------------------------------------- */
+header{
+    width:100%;
+    height:3.5vw;
+
+    background:black;
+}
+
+/* -------------------- NAVIGATION DEBUT -------------------- */
+nav{
+    width:100%;
+    height:3.5vw;
+
+    background:black;
+    position:fixed;
+
+    z-index:100;
+}
+
+ul{
+    margin:0;
+
+    width:50%;
+    height:100%;
+
+    float:right;
+    margin-right:10px;
+
+    display:flex;
+    justify-content: space-around;
+}
+
+.liSite{
+    font-family:font1;
+    font-size:1.5vw;
+
+    color:white;
+
+    margin-top:0.9vw;
+    list-style:none;
+}
+
+.liSite:hover{
+    color:#7401DF;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+#cont{
+    padding-right:1vw;
+    border-right:3px solid #7401DF;
+}
+
+#im{
+    color:#7401DF;
+}
+/* -------------------- NAVIGATION FIN -------------------- */
+
+
+
+footer{
+    bottom:0;
+    position:fixed;
+}
+
+
+
+
+/* -------------------- LOGO DEBUT -------------------- */
+#logo{
+    position:fixed;
+    
+    height:3vw;
+    width:7vw;
+
+    left:0;
+    top:0;
+
+    margin-left:0px;
+    margin-top:4px;
+
+    z-index:101;
+}
+/* -------------------- LOGO FIN -------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                HEADER FIN
+------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------
+                                                MAIN DEBUT
+--------------------------------------------------------------------------------------------------------------- */
+
+.carousel {
+    margin-top:5vw;
+    display: flex;
+
+    height:30vw;
+    width:100vw;
+    left:0;
+    
+  }
+  .carousel img {
+   /* overflow:hidden; */
+    cursor: pointer;
+    width:50vw;
+    height:100%;
+    position:absolute;
+  }
+
+  #img1{
+    left:0;
+    left:25vw;
+  }
+
+  #img2{
+    left:85vw;
+  }
+
+  #img3{
+    left:145vw;
+  }
+
+  .conteneurslideShow{
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+    position:relative;
+  }
+
+  .contenerSlide{
+      width:98%;
+      height:100%;
+       position:absolute;
+
+       -webkit-animation-duration: 20s;
+       -webkit-animation-iteration-count:infinite;
+       -webkit-animation-name: anim_slide;
+       -moz-animation-duration: 20s;
+       -moz-animation-iteration-count:infinite;
+       -moz-animation-name: anim_slide;
+       -ms-animation-duration: 20s;
+       -ms-animation-iteration-count:infinite;
+       -ms-animation-name: anim_slide;
+       animation-duration: 20s;
+       animation-iteration-count:infinite;
+       animation-name: anim_slide;
+     }
+     @-webkit-keyframes anim_slide 
+     {
+       0% {left:0px;}
+       22% {left:0px;}
+       33% {left:-60vw;}
+       45% {left:-60vw;}
+       66% {left:-120vw;}
+       90% {left:-120vw;}
+     }
+     @-moz-keyframes anim_slide 
+     {
+       0% {left:0px;}
+       22% {left:0px;}
+       33% {left:-60vw;}
+       45% {left:-60vw;}
+       66% {left:-120vw;}
+       90% {left:-120vw;}
+     }
+     @-ms-keyframes anim_slide 
+     {
+       0% {left:0px;}
+       22% {left:0px;}
+       33% {left:-60vw;}
+       45% {left:-60vw;}
+       66% {left:-120vw;}
+       90% {left:-120vw;}
+     }
+     @keyframes anim_slide 
+     {
+       0% {left:0px;}
+       22% {left:0px;}
+       33% {left:-60vw;}
+       45% {left:-60vw;}
+       66% {left:-120vw;}
+       90% {left:-120vw;}
+     }
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                SCROLLBAR DEBUT
+------------------------------------------------------------------------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    width: 2px;
+    border: 1px dotted #7401DF;
+    
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background:#7401DF;
+    border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: #9A2EFE;  
+    }
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                SCROLLBAR FIN
+------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                FOOTER DEBUT
+------------------------------------------------------------------------------------------------------------------------------------------- */
+footer{
+    border-top:1px white solid;
+    width:100%;
+    height:4vw;
+
+    background:black;
+
+    display:flex;
+    justify-content: space-around;
+}
+
+.txt_footer{
+    margin:0;
+
+    color:white;
+    font-size:1.2vw;
+    font-family:font1;
+
+    line-height:4vw;
+}
+
+#ML:hover{
+    color:#7401DF;
+    cursor:pointer;
+}
+
+.mention a , .txt_footer i{
+    font-size:2vw;
+    color:white;
+}
+footer a:hover{
+    color:#7401DF;
+}
+footer i:hover{
+    color:#7401DF;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                FOOTER FIN
+------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+.gal{
+    font-size:30px;
+    top:0;
+
+    z-index:20;
+    color:white;
+
+    position:absolute;
+    margin-top:130px; 
+
+    margin-left:190px;
+    font-family: "font2";
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                RESPONSIVE
+------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 560px) {
+
+    /* -------------------- NAVIGATION BURGER DEBUT -------------------- */
+        
+        header{
+            height:30px;  
+            position:static;  
+            z-index:500;
+        }
+    
+        #logo{
+            height:20px;
+        }
+    
+        nav{
+            position:fixed;
+            height:100%;
+        }
+    
+        ul{
+            height:50%;
+            width:85%;
+    
+            flex-direction:column;
+    
+            margin:0;
+            margin-top:20vw;
+            float:none;
+        }
+    
+        .liSite{
+            width:100%;
+            height:10vw;
+    
+            border-bottom:3px #7401DF solid;
+    
+            text-align: center;
+            font-size:4vw;
+    
+            line-height:10vw;
+        }
+    
+        #cont{
+            padding-right:initial;
+            border-right:none;
+        }
+    
+        #inscr{
+            border-bottom:none;
+        }
+    
+        header i{
+            color:white;
+            position: fixed;
+        
+            z-index:1000;
+            font-size:25px;
+        
+                
+            top:0;
+            right:0;
+            
+            margin-right:10px;
+            margin-top:2px;
+        }
+    
+        #fond{
+            margin-top:5vw;
+            background-repeat: repeat-y;
+            height:100%;
+        }
+    /* -------------------- NAVIGATION BURGER FIN -------------------- */
+
+    .carousel{
+        margin-top:30vw;
+    }
+    }

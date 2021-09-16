@@ -1,0 +1,209 @@
+/* legend {
+    font-size: 1.7vw;
+    font-family: "font1";
+
+    color: white;
+    margin-bottom:2vw;
+    left:0;
+}
+
+label {
+    color: white;
+    font-size: 1.2vw;
+
+    font-family: "font1";
+    /* margin-top:8vw; */
+}
+
+body {
+    background: black;
+}
+
+#fond {
+    opacity: 0.8;
+}
+
+/* fieldset {
+    width: 30%;
+    
+    right:0;
+   
+    position: relative;
+}
+
+form{
+    height:18vw;
+    margin-top:5vw;
+    text-align:center;
+
+} */
+
+
+/* 
+input[type=submit] {
+    font-family: "font1";
+    font-size: 1vw;
+
+    border: none;
+    background: white;
+
+    width: 10vw;
+    padding: 0.6vw;
+
+    margin-left:1.7vw;
+
+    
+    color: black;
+    height:3vw;
+}
+
+input[type=submit]:hover {
+    color: #7401DF;
+    cursor:pointer;
+  } */
+/* 
+input, textarea{
+    margin-top:1.3vw;
+    margin-bottom:1.5vw;
+    height:1vw;
+    width:30%;
+
+    margin-left:7.5vw;
+}
+
+textarea{
+    height:7vw;
+    width:70%;
+ margin-left:3vw; 
+} */
+
+
+h1 {
+    display: none;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+#bl {
+    color: #7401DF;
+}
+
+#active {
+    color: white;
+}
+
+p {
+    color: white;
+    font-family: "font2";
+
+    font-size: 1vw;
+    top: 0;
+
+    margin-bottom: 2vw;
+}
+
+@font-face {
+    src: url('../font/Gothic.ttf');
+    font-family: 'font1';
+}
+
+@font-face {
+    src: url('../font/Oswald.ttf');
+    font-family: 'font2';
+}
+
+/* input[type=file]{
+    margin-left:2.5vw;
+
+    width:15vw;
+    height:3vw;
+ 
+    color:white;
+
+    font-size:0.8vw;
+}
+
+label[for=contenu]{
+    position:absolute;
+
+    left:0;
+    margin-left:2.7vw;
+
+    top:0;
+    margin-top:8vw;
+    
+} */
+
+h2 {
+    color: white;
+    font-family: "font1";
+    /* display:inline-block; */
+
+    font-size: 1.8vw;
+    letter-spacing: 2px;
+}
+
+time {
+    color: black;
+    font-family: "font2";
+}
+
+.arts {
+    position: absolute;
+    right: 0;
+
+    margin-top: 10vw;
+    margin-right: 30vw;
+
+
+    width: 40%;
+
+    text-align: center;
+
+}
+
+a {
+    font-family: "font2";
+    color: #7401DF;
+}
+
+#art {
+    display: initial;
+
+
+    position: absolute;
+    right: 0;
+
+    margin-right: 25.5vw;
+    margin-top: -3vw;
+
+    letter-spacing: 5px;
+}
+
+@media screen and (max-width: 560px) {
+    #fond {
+        opacity: 0.8;
+        height:100%;
+    }
+
+    body {
+        background: white;
+    }
+
+    .arts{
+        margin-top:30vw;
+
+    }
+
+    h2{
+        font-size:20px;
+    }
+
+    .arts a{
+        border-bottom:solid 2px black;
+        }
+}

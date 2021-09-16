@@ -1,0 +1,381 @@
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                FONTS DEBUT
+------------------------------------------------------------------------------------------------------------------------------------------- */
+@font-face {
+    src: url('../font/Gothic.ttf');
+    font-family: 'font1';
+}
+
+@font-face {
+    src: url('../font/Oswald.ttf');
+    font-family: 'font2';
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                FONTS FIN
+------------------------------------------------------------------------------------------------------------------------------------------- */
+body {
+    margin: 0;
+    padding: 0;
+
+    background: black;
+}
+
+a {
+    text-decoration: none;
+}
+
+#fond {
+    position: fixed;
+    z-index: -1;
+    margin-top: 3vw;
+
+    width: 100%;
+    height: 55vw;
+
+    opacity: 0.6;
+}
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                HEADER DEBUT
+------------------------------------------------------------------------------------------------------------------------------------------- */
+header {
+    width: 100%;
+    height: 3.5vw;
+
+    background: black;
+}
+
+/* -------------------- NAVIGATION DEBUT -------------------- */
+nav {
+    width: 100%;
+    height: 3.5vw;
+
+    background: black;
+    position: fixed;
+
+    z-index: 100;
+}
+
+ul {
+    margin: 0;
+
+    width: 50%;
+    height: 100%;
+
+    float: right;
+    margin-right: 10px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.liSite {
+    font-family: font1;
+    font-size: 1.5vw;
+
+    color: white;
+
+    margin-top: 0.9vw;
+    list-style: none;
+}
+
+.liSite:hover {
+    color: #7401DF;
+}
+
+#cont {
+    padding-right: 1vw;
+    border-right: 3px solid #7401DF;
+}
+
+#hi {
+    color: #7401DF;
+}
+
+/* -------------------- NAVIGATION FIN -------------------- */
+
+
+
+
+
+
+
+
+
+/* -------------------- LOGO DEBUT -------------------- */
+#logo {
+    position: fixed;
+
+    height: 3vw;
+    width: 7vw;
+
+    left: 0;
+    top: 0;
+
+    margin-left: 0px;
+    margin-top: 4px;
+
+    z-index: 101;
+}
+
+/* -------------------- LOGO FIN -------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                HEADER FIN
+------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------
+                                                MAIN DEBUT
+--------------------------------------------------------------------------------------------------------------- */
+main {
+    font-family: "font2";
+}
+
+p {
+    color: white;
+    text-shadow: 1px black;
+
+    margin-left: 5vw;
+    margin-top: 2vw;
+
+    font-size: 1.2vw;
+    line-height: 3vw;
+}
+
+h3 {
+    color: #7401DF;
+    font-size: 1.8vw;
+
+    margin-right: 10vw;
+    margin-left: 5vw;
+
+    cursor: pointer;
+    border-bottom: double white 4px;
+
+    border-width: 4px;
+    padding-bottom: 15px;
+
+}
+
+h3:hover {
+    color: white;
+}
+
+#titres {
+    display: flex;
+
+}
+
+#hist {
+    height: 35vw;
+    margin-top: 4vw;
+
+    width: 55vw;
+    position: relative;
+}
+
+#s1 {
+    position: absolute;
+}
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                SCROLLBAR DEBUT
+------------------------------------------------------------------------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    width: 2px;
+    border: 1px dotted #7401DF;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background: #7401DF;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #9A2EFE;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                SCROLLBAR FIN
+------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                FOOTER DEBUT
+------------------------------------------------------------------------------------------------------------------------------------------- */
+footer {
+    border-top: 1px white solid;
+    width: 100%;
+    height: 4vw;
+
+    background: black;
+
+    display: flex;
+    justify-content: space-around;
+
+    position: fixed;
+    bottom: 0;
+}
+
+.txt_footer {
+    margin: 0;
+
+    color: white;
+    font-size: 1.2vw;
+    font-family: font1;
+
+    line-height: 4vw;
+}
+
+#ML:hover {
+    color: #7401DF;
+    cursor: pointer;
+}
+
+.mention a,
+.txt_footer i {
+    font-size: 2vw;
+    color: white;
+}
+
+footer a:hover {
+    color: #7401DF;
+}
+
+footer i:hover {
+    color: #7401DF;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                FOOTER FIN
+------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 560px) {
+
+    /* -------------------- NAVIGATION BURGER DEBUT -------------------- */
+
+    header {
+        height: 30px;
+        position: static;
+        z-index: 500;
+    }
+
+    #logo {
+        height: 20px;
+    }
+
+    nav {
+        position: fixed;
+        height: 100%;
+    }
+
+    ul {
+        height: 50%;
+        width: 85%;
+
+        flex-direction: column;
+
+        margin: 0;
+        margin-top: 20vw;
+        float: none;
+    }
+
+    .liSite {
+        width: 100%;
+        height: 10vw;
+
+        border-bottom: 3px #7401DF solid;
+
+        text-align: center;
+        font-size: 4vw;
+
+        line-height: 10vw;
+    }
+
+    #cont {
+        padding-right: initial;
+        border-right: none;
+    }
+
+    #inscr {
+        border-bottom: none;
+    }
+
+    header i {
+        color: white;
+        position: fixed;
+
+        z-index: 1000;
+        font-size: 25px;
+
+
+        top: 0;
+        right: 0;
+
+        margin-right: 10px;
+        margin-top: 2px;
+    }
+
+    #fond {
+        margin-top: 5vw;
+    }
+
+    /* -------------------- NAVIGATION BURGER FIN -------------------- */
+
+    body{
+            
+        background:rgba(79, 120, 116, 0.82);
+        
+    }
+    #fond{
+        opacity:1;
+    }
+
+    h3{
+        font-size:19px;
+    }
+
+   #hist p{
+        font-size:15px;
+        line-height:30px;
+
+        width:100%; 
+    }
+
+    #hist{
+        text-align:center;
+        margin-left:auto;
+        margin-right:auto;
+        width:75%;
+
+    }
+
+    #t2{
+        margin-left:150px;
+        text-shadow: black 2px 2px;
+    }
+    #t1{
+        margin-left:80px;
+        text-shadow: black 2px 2px;
+    }
+
+
+}

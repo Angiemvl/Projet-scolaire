@@ -1,0 +1,705 @@
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                FONTS DEBUT
+------------------------------------------------------------------------------------------------------------------------------------------- */
+@font-face{
+    src: url('../font/Gothic.ttf');
+    font-family: 'font1';
+}
+
+@font-face{
+    src: url('../font/Oswald.ttf');
+    font-family: 'font2';
+}
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                FONTS FIN
+------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                ANIMATION DEBUT
+------------------------------------------------------------------------------------------------------------------------------------------- */
+@keyframes A_video{
+    0% {
+        width:35vw;
+        height:20vw;
+    
+        border: 2px white solid;
+    
+        float:right;
+    
+        margin-right:15vw;
+        margin-top:11.8vw;
+    }
+
+    100% {
+        position:fixed;
+
+        width:71vw;
+        height:40vw;
+
+        margin-top:5vw;
+        margin-right:14vw;
+
+        z-index:2000;
+    }
+}
+.A_video{
+    animation: A_video 2s forwards;
+}
+
+@keyframes cA_video{
+    0% {
+        position:fixed;
+
+        width:71vw;
+        height:40vw;
+
+        margin-top:5vw;
+        margin-right:14vw;
+
+        z-index:2000;
+    }
+
+    100% {
+        position:absolute;
+
+        width:35vw;
+        height:20vw;
+    
+        border: 2px white solid;
+    
+        float:right;
+    
+        margin-right:15vw;
+        margin-top:11.8vw;
+    }
+}
+.cA_video{
+    animation: cA_video 2s forwards;
+}
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                ANIMATION FIN
+------------------------------------------------------------------------------------------------------------------------------------------- */
+
+body{
+    margin:0;
+    padding:0;
+}
+
+a{
+    text-decoration: none;
+}
+
+#fond{
+    position:fixed;
+    z-index:-1;
+    margin-top:3vw;
+
+    width:100%;
+    height:55vw;
+}
+
+#voile{
+    width:100%;
+    height:100%;
+
+    background:black;
+
+    opacity:0.9;
+
+    position:fixed;
+    z-index:1999;
+
+    top:0;
+    left:0;
+}
+
+#load{
+    position: fixed;
+    right: 0; 
+
+    bottom: 0;
+    width: 100%; 
+    height: 100%; 
+
+    background-size: cover;
+    background-color:black;
+
+    z-index:8000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                HEADER DEBUT
+------------------------------------------------------------------------------------------------------------------------------------------- */
+header{
+    width:100%;
+    height:3.5vw;
+
+    background:black;
+}
+
+/* -------------------- NAVIGATION DEBUT -------------------- */
+nav{
+    width:100%;
+    height:3.5vw;
+
+    background:black;
+    position:fixed;
+
+    z-index:100;
+}
+
+ul{
+    margin:0;
+
+    width:50%;
+    height:100%;
+
+    float:right;
+    margin-right:10px;
+
+    display:flex;
+    justify-content: space-around;
+}
+
+.liSite{
+    font-family:font1;
+    font-size:1.5vw;
+
+    color:white;
+
+    margin-top:0.9vw;
+    list-style:none;
+}
+
+.liSite:hover{
+    color:#7401DF;
+}
+
+#cont{
+    padding-right:1vw;
+    border-right:3px solid #7401DF;
+}
+
+#active{
+    color:#7401DF;
+}
+/* -------------------- NAVIGATION FIN -------------------- */
+
+
+
+
+
+
+
+
+
+/* -------------------- LOGO DEBUT -------------------- */
+#logo{
+    position:fixed;
+    
+    height:3vw;
+    width:7vw;
+
+    left:0;
+    top:0;
+
+    margin-left:0px;
+    margin-top:4px;
+
+    z-index:101;
+}
+/* -------------------- LOGO FIN -------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                HEADER FIN
+------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                MAIN DEBUT
+------------------------------------------------------------------------------------------------------------------------------------------- */
+main{
+    width:100%;
+    /* height:100vw; */
+
+    position:relative;
+}
+
+
+
+
+
+
+
+
+
+/* -------------------- VIDEO DEBUT -------------------- */
+#divideo{
+    width:100%;
+    height:50vw;
+}
+#box_Video{
+    position:absolute;
+
+    width:35vw;
+    height:20vw;
+
+    border: 2px white solid;
+    box-shadow:0 0 20px black;
+    background:black;
+
+    right:0;
+    top:0;
+
+    margin-right:15vw;
+    margin-top:11.8vw;
+}
+
+#video{
+    opacity:0.4;
+    transition:0.5s;
+}
+
+#play{
+    cursor: pointer;
+    color:white;
+    position:absolute;
+
+    top:0;
+    margin-top:8.5vw;
+    margin-left:16vw;
+
+    font-size:3vw;
+    opacity:0.5;
+
+    z-index:50;
+}
+#play:hover{
+    opacity:1;
+}
+#cross{
+    cursor:pointer;
+
+    width:40px;
+    height:40px;
+    position:fixed;
+
+    margin-top:75px;
+    margin-right:125px;
+
+    top:0;
+    right:0;
+
+    z-index:2002;
+}
+
+#cross::after{
+    content:'';
+
+    width:100%;
+    height:3px;
+
+    background:white;
+
+    position:absolute;
+
+    transform:rotateZ(-45deg);
+
+    margin-top:19px;
+}
+
+#cross::before{
+    content:'';
+
+    width:100%;
+    height:3px;
+
+    background:white;
+    position:absolute;
+
+    bottom:0;
+
+    transform:rotateZ(45deg);
+
+    margin-bottom:19px;
+}
+
+#cross:hover + #cross::before{
+    background:#7401DF;
+}
+/* -------------------- VIDEO FIN -------------------- */
+
+
+
+
+
+
+
+
+
+/* -------------------- PRESENTATION DEBUT -------------------- */
+#prez{
+    background:url(../img/wp2.jpg) fixed 100%;
+
+    width:100%;
+    height:50vw;
+
+    z-index:1;
+
+    display:flex;
+    /* justify-content: space-around; */
+    align-items:center;
+    flex-direction: column;
+}
+
+h1{
+    font-size:3vw;
+    font-family:font1;
+    color:white;
+
+    width:50%;
+    height:3vw;
+
+    padding-top:5vw;
+    text-align:center;
+    text-shadow: 2px 2px black;
+}
+
+#txt_prez{
+    color:white;
+    margin-left:auto;
+    margin-right:auto;
+    
+
+    font-family:font2;
+    font-size:1.3vw;
+
+
+    text-align:center;
+    width:50%;
+
+    line-height:3.5vw;
+    text-shadow: 2px 2px black;
+}
+
+#btn_histoire{
+    cursor: pointer;
+    background:white;
+
+    width:27%;
+    height:4.5vw;
+
+    border-radius:5px;
+
+    text-align:center;
+    color:black;
+
+    font-size:2vw;
+    font-family:font1;
+
+    line-height:4.5vw;
+    margin-top:3vw;
+
+    transition:1s;
+}
+
+#btn_histoire span {
+    cursor: pointer;
+    display: inline-block;
+  
+    position: relative;
+    transition: 0.5s;
+    color:black;
+  }
+#btn_histoire  span:after {
+    content: '\00bb';
+    position: absolute;
+  
+    opacity: 0;
+    top: 0;
+  
+    right: -20px;
+    transition: 0.3s;
+  }
+  
+#btn_histoire:hover span {
+    padding-right: 25px;
+      color:#7401DF;
+  }
+#btn_histoire:hover span:after {
+    opacity: 1;
+      right: 0;
+  }
+
+  #btn_histoire a{
+    text-decoration: none;
+  }
+
+/* -------------------- PRESENTATION FIN -------------------- */
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                MAIN FIN
+------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                SCROLLBAR DEBUT
+------------------------------------------------------------------------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+    }
+    
+    ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    width: 2px;
+    border: 1px dotted #7401DF;
+    
+    }
+    
+    ::-webkit-scrollbar-thumb {
+    background:#7401DF;
+    border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover {
+    background: #9A2EFE;  
+    }
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                SCROLLBAR FIN
+------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                FOOTER DEBUT
+------------------------------------------------------------------------------------------------------------------------------------------- */
+footer{
+    border-top:1px white solid;
+    width:100%;
+    height:4vw;
+
+    background:black;
+
+    display:flex;
+    justify-content: space-around;
+}
+
+.txt_footer{
+    margin:0;
+
+    color:white;
+    font-size:1.2vw;
+    font-family:font1;
+
+    line-height:4vw;
+}
+
+#ML:hover{
+    color:#7401DF;
+    cursor:pointer;
+}
+
+.mention a , .txt_footer i{
+    font-size:2vw;
+    color:white;
+}
+footer a:hover{
+    color:#7401DF;
+}
+footer i:hover{
+    color:#7401DF;
+}
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                FOOTER FIN
+------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------------------------------------------------------------------------
+                                                                RESPONSIVE
+------------------------------------------------------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 560px) {
+
+/* -------------------- NAVIGATION BURGER DEBUT -------------------- */
+    
+    header{
+        height:30px;  
+        position:fixed;  
+        z-index:500;
+    }
+
+    #logo{
+        height:20px;
+    }
+
+    nav{
+        position:fixed;
+        height:100%;
+    }
+
+    ul{
+        height:50%;
+        width:85%;
+
+        flex-direction:column;
+
+        margin:0;
+        margin-top:20vw;
+        float:none;
+    }
+
+    .liSite{
+        width:100%;
+        height:10vw;
+
+        border-bottom:3px #7401DF solid;
+
+        text-align: center;
+        font-size:4vw;
+
+        line-height:10vw;
+    }
+
+    #cont{
+        padding-right:initial;
+        border-right:none;
+    }
+
+    #inscr{
+        border-bottom:none;
+    }
+
+    header i{
+        color:white;
+        position: fixed;
+    
+        z-index:1000;
+        font-size:25px;
+    
+            
+        top:0;
+        right:0;
+        
+        margin-right:10px;
+        margin-top:2px;
+    }
+
+    #fond{
+        margin-top:5vw;
+    }
+/* -------------------- NAVIGATION BURGER FIN -------------------- */
+
+#divideo{
+   height:48%;
+}
+
+
+#prez{
+    height:49%;
+}
+
+body{
+    background:black;
+}

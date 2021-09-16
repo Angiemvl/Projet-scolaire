@@ -1,0 +1,90 @@
+#inscr{
+    color: #7401DF;
+}
+
+#cont{
+    color:white;
+}
+
+p{
+    color:red;
+}
+
+label{
+    color:white;
+}
+
+body{
+    background:black
+}
+
+#fond{
+    opacity:0.5;
+}
+
+form{
+    float:left;
+    margin-right:5vw;
+    top:0;
+    
+}
+
+footer{
+    border-top:1px white solid;
+    width:100%;
+    height:4vw;
+
+    background:black;
+
+    display:flex;
+    justify-content: space-around;
+
+    bottom:0;
+    position:fixed;
+}
+
+.txt_footer{
+    margin:0;
+
+    color:white;
+    font-size:1.2vw;
+    font-family:font1;
+
+    line-height:4vw;
+}
+
+#ML:hover{
+    color:#7401DF;
+    cursor:pointer;
+}
+
+.mention a , .txt_footer i{
+    font-size:2vw;
+    color:white;
+}
+footer a:hover{
+    color:#7401DF;
+}
+footer i:hover{
+    color:#7401DF;
+}
+legend{
+    color:white;
+}
+
+.alert{
+    color:red;
+    display:flex;
+    bottom:0;  
+    position:absolute;
+    margin-bottom:5vw;  
+
+}
+
+alert-danger{
+    color:red;
+}
+
+alert-succes{
+    color:green;
+}

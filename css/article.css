@@ -1,0 +1,142 @@
+legend {
+    font-size: 1.7vw;
+    font-family: "font1";
+
+    color: white;
+    left:0;
+}
+
+label {
+    color: white;
+    font-size: 1.2vw;
+
+    font-family: "font1";
+}
+
+body{
+    background:black;
+}
+#fond{
+    opacity:0.5;
+}
+fieldset {
+    width: 30%;
+    
+    margin-left:auto;
+    margin-right:auto;
+   
+    position: relative;
+}
+
+form{
+    height:18vw;
+    margin-top:5vw;
+    text-align:center;
+
+}
+
+#bl{
+    color: #7401DF;  
+}
+
+
+#active{
+      color:white;
+}
+
+input[type=submit] {
+    font-family: "font1";
+    font-size: 1vw;
+
+    border: none;
+    background: white;
+
+    width: 5vw;
+    padding: 0.6vw;
+
+
+    
+    color: black;
+    height:3vw;
+}
+
+input[type=submit]:hover {
+    color: #7401DF;
+    cursor:pointer;
+}
+
+textarea{
+    height:10vw;
+    width:30vw;
+}
+
+h1{
+    display:none;
+}
+
+#tarticle{
+    display:initial;
+    margin-left:5vw;
+}
+
+.contenu{
+    color:white;
+    font-family:"font2";
+
+    line-height:2.5vw;
+    text-align:center;
+
+    width:85%;
+    margin-left:auto;
+
+    margin-right:auto;
+    font-size:1.1vw;
+
+}
+
+h2{
+    color: #7401DF;
+    font-family:"font1";
+    
+    font-size:2.3vw;
+    text-shadow: 4px 4px black;
+    
+    margin-top:3vw;
+}
+
+.error{
+    color:red;
+    font-family:"font1";
+
+    font-size:1.5vw;
+}
+
+h3, time, p{
+    color:black;
+    font-family:"font1";
+    /* text-shadow: 3px 3px 2px black; */
+
+}
+.auth{
+    font-size:1.5vw;
+    color: #7401DF;
+    text-shadow: 2px 2px white; 
+}
+
+.com{
+    background:white;
+    border:solid 3px #7401DF;
+    width:55%;
+    margin-left:auto;
+    margin-right:auto;
+    opacity:0.5;
+}
+
+hr{
+    width:90%;
+    margin: auto;
+}
+
+.oui{
+    font-size:1.3vw; 
+}
